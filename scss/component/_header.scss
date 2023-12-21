@@ -1,0 +1,73 @@
+/* estilos header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100vw;
+    background-color: #fafafa;
+    .main-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            a{
+                .logo-qac{
+                height: 100px;
+                width: 100px;
+                margin-left: 20px;
+            }
+            .titulo-header{
+                text-align: center;
+            }    
+        }
+    }
+    nav{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                color: black;
+                padding: 10px;
+                a{
+                    text-decoration: none;
+                    color: #292c3e;
+                    font-size: medium;
+                    font-weight: bold;
+                }
+            } 
+        }
+    };
+    nav{
+        ul{
+            .botones-menu{
+                background-color: #292c3e;
+                margin: 10px;
+                border-radius: 10%;
+                .style-boton{
+                    color: #fafafa;
+                    font-size: medium;
+                }
+            }
+        }
+    }
+    div{
+        nav{
+            div{
+                div{
+                    ul{
+                        .list-menu{
+                            background-color: none;
+                            .logo-qac{
+                                height: 100px;
+                                width: 100px;
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,22 @@
+/* estilo main historia */
+
+main{
+    div{
+        @extend %titulos;
+        }
+    }
+    section{
+        .foto-historia{
+            text-align: center;
+        }
+        .texto-historia{
+            color:#01ebcf;
+            font-family: 'Open Sans', sans-serif;
+                p{
+                    text-align: center;
+                    border: 2px solid wheat;
+                    height: auto;
+                    overflow: hidden;
+            }
+        }
+    }

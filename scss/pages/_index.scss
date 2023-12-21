@@ -1,0 +1,33 @@
+/* estilo main inicio */
+main{
+    section{
+        div{
+            div{
+                .card{
+                    height: 600px;
+                    border: 2px solid #01ebcf;
+                    background-color:#292c3e ;
+                    overflow: hidden;
+                    border-radius: 5px;
+                    box-shadow: 11px 13px 46px 2px rgba(105,221,232,0.75);
+                    -webkit-box-shadow: 11px 13px 46px 2px rgba(105,221,232,0.75);
+                    -moz-box-shadow: 11px 13px 46px 2px rgba(105,221,232,0.75);
+                    .fixture{
+                        width: 100%;
+                        height: 300px ;
+                    }
+                    .titulos{
+                        @extend %titulos;
+                    }    
+                    .texto-box{
+                        @include fonts(small,'Open Sans',#01ebcf);
+                        text-align: center;
+                        
+                        
+                    }
+                }
+                }
+                
+            } 
+        }
+    }

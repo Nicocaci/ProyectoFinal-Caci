@@ -1,0 +1,14 @@
+/* estilo main galeria */
+
+main{
+    div{
+        @extend %titulos;
+        }
+    }
+    section{
+        div{
+            .grilla-fotos{
+                height: 400px;
+            }
+    }
+}

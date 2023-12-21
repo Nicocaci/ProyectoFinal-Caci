@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- titulo del html -->
+    <title>Quilmes Atleitco Club </title>
+
+    <!-- Link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- link css -->
+    <link rel="stylesheet" href="./scss/main.css">
+    
+
+    <!-- link favicom -->
+    <link rel="shortcut icon" href="./media/qac.png" type="image/x-icon">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- todo lo que se encuentra dentro de nuestro html -->
+
+<body>
+    <!-- encabezado de nuestro html -->
+    <header class="encabezado p-3">
+        <div class="main-header">
+            <!-- logo del encabezado linkeado -->
+            <a href="./index.html">
+                <img class="logo-qac" src="./media/qac.png" alt="logo qac">
+            </a>
+            <!-- titulo principal -->
+            <h1 class="text-center">Quilmes Atlético Club</h1>
+        </div>
+
+
+        <!-- botones de navegacion -->
+        <nav class="d-none d-lg-flex">
+            <ul>
+                <li class="botones-menu" ><a class="style-boton" href="#">Home</a></li>
+                <li class="botones-menu"><a class="style-boton" href="./pages/galeria.html">Galeria</a></li>
+                <li class="botones-menu"><a class="style-boton" href="./pages/historia.html">Hisotria</a></li>
+                <li class="botones-menu"><a class="style-boton" href="./pages/contacto.html">Contacto</a></li>
+                <li class="botones-menu"><a class="style-boton" href="./pages/ubicacion.html">Ubicación</a></li>
+            </ul>
+        </nav>
+        <div class="d-block d-lg-none">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Quilmes Atlético Club</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 align-items-center">
+                                <li class="list-menu"><a href="./index.html"><img class="logo-qac" src="./media/qac.png" alt=""></a></li>
+                                <li class="list-menu"><a href="#">Home</a></li>
+                                <li class="list-menu"><a href="./pages/galeria.html">Galeria</a></li>
+                                <li class="list-menu"><a href="./pages/historia.html">Hisotria</a></li>
+                                <li class="list-menu"><a href="./pages/contacto.html">Contacto</a></li>
+                                <li class="list-menu"><a href="./pages/ubicacion.html">Ubicación</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- material mas imporatnte del html -->
+    <main class="w-100">
+
+        <!-- seccion donde van a estar las cartas -->
+        <section class="mt-5 pe-5 ps-5">
+            <!-- con div, vamos a dividir cada una de las cartas del html, para luego poder darle el estilo que queramos -->
+            <div class="row">
+                <div class="col-lg-4 col-xs-12 col-md-6">
+                    <div class="card ">
+                        <!-- imagen del box 1 -->
+                        <img class="fixture" src="./media/ultima_fecha.jpg" alt="ultima fecha qac">
+                        <div>
+                            <h3 class="titulos">Ultima Fecha disputada</h3>
+                        </div>
+                        <!-- texto del box 1 -->
+                        <div class="texto-box">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, soluta quis
+                                perferendis voluptates recusandae ullam enim maiores mollitia officiis ut fugiat
+                                dolores, aut cum temporibus rerum! Totam quibusdam excepturi fugit./p>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-lg-4 col-xs-12 col-md-6">
+                    <div class="card">
+                        <!-- imagen del box 2 -->
+                        <img class="fixture" src="./media/mamo-ronconi.jpg" alt="mamo ronconi">
+                        <!-- nombre del entrevistado box2 -->
+                        <h3 class="titulos">Mamo ronoconi</h3>
+                        <div>
+                            <p class="texto-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam recusandae hic similique
+                                est, possimus eum facere sed nostrum ex. Atque eligendi possimus in? Ipsum deserunt
+                                corrupti necessitatibus nulla repellat debitis.
+                                Vel, aperiam sapiente sequi commodi distinctio, inventore, voluptas fuga tenetur libero
+                                ullam fugit. Mollitia consequuntur quis nesciunt magnam similique totam fugit illum
+                                minima. Sequi exercitationem nam mollitia, cupiditate adipisci minus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xs-12 col-md-6">
+                    <div class="card">
+                        <!-- video resumen de partido -->
+                        <div>
+                            <img class="fixture" src="./media/mvp-qac.jpg" alt="mejor jugador del partido">
+                        </div>
+                        <div>
+                            <h3 class="titulos">Mvp del partido</h3>
+                        </div>
+                        <div class="texto-box">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem adipisci nulla
+                                pariatur. Nobis corrupti exercitationem quibusdam voluptate voluptas sit aut fugit iusto
+                                molestias, in, soluta accusamus. Beatae necessitatibus fuga modi!
+                                Placeat laborum voluptatem, eum, assumenda molestiae dolorem ad eveniet aspernatur
+                                soluta ducimus explicabo delectus vel corporis tempora repellat. Officiis sed quidem
+                                totam, nemo labore enim quis laboriosam doloremque aut ad.
+                                Ipsum odit quas reprehenderit excepturi natus iure minima voluptatem! Reiciendis odio,
+                                dolore nemo rerum est doloribus incidunt aliquid nesciunt, architecto adipisci illum
+                                deserunt voluptatum autem pariatur, reprehenderit possimus. Incidunt, atque.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- pie de pagina -->
+    <footer class="pie-de-pagina">
+        <div>
+            <a href="https://www.facebook.com/QACHOCKEY"><img class="logos-footer" src="./media/logo-facebook.png"
+                    alt="logo facebook"></a>
+        </div>
+        <a href="https://www.instagram.com/quilmeshockeyoficial/"><img class="logos-footer"
+                src="./media/logo-instagram.png" alt="logo ig"></a>
+        <div>
+            <a href="#"><img class="logos-footer" src="./media/logo-wp.png" alt="logo wp"></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+/* estilo main ubicacion */
+main{
+    div{
+        @extend %titulos;
+        }
+    }
+    section{
+        div{
+            iframe{
+            font-family: 'Poppins', sans-serif;
+            color: #e7c2c2;
+            text-align: center;
+            padding-top: 10px;
+            text-decoration: underline;
+            }
+        }
+    }
