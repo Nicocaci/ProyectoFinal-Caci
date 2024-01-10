@@ -1,33 +1,52 @@
 /* estilo main inicio */
 main{
-    section{
-        div{
-            div{
-                .card{
-                    height: 600px;
-                    border: 2px solid #01ebcf;
-                    background-color:#292c3e ;
-                    overflow: hidden;
-                    border-radius: 5px;
-                    box-shadow: 11px 13px 46px 2px rgba(105,221,232,0.75);
-                    -webkit-box-shadow: 11px 13px 46px 2px rgba(105,221,232,0.75);
-                    -moz-box-shadow: 11px 13px 46px 2px rgba(105,221,232,0.75);
-                    .fixture{
-                        width: 100%;
-                        height: 300px ;
-                    }
-                    .titulos{
-                        @extend %titulos;
-                    }    
-                    .texto-box{
-                        @include fonts(small,'Open Sans',#01ebcf);
-                        text-align: center;
-                        
-                        
-                    }
-                }
-                }
+    .section-cards{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+        .card-uno{
+            @extend %card;
+            margin-left: 20px;
+            margin-right: 20px;
+            .fixture{
+                width: 100%;
                 
-            } 
+                border-bottom: 1px solid #ddd;
+                .titulo-card-uno{
+                    @extend %titulos;
+                }
+            }
+        }
+        .card-dos{
+            @extend %card;
+            margin-left: 20px;
+            margin-right: 20px;
+            .fixture{
+                width: 100%;
+               
+                border-bottom: 1px solid #ddd;
+                .titulo-card-dos{
+                    @extend %titulos;
+                }
+            }
+        }
+        .card-tres{
+            @extend %card;
+            margin-left: 20px;
+            margin-right: 20px;
+            .fixture{
+                width: 100%;
+                border-bottom: 1px solid #ddd;
+                .titulo-card-tres{
+                    @extend %titulos;
+                }
         }
     }
+
+
+}
+}
+                
+            
+

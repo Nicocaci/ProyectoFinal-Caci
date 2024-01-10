@@ -1,28 +1,40 @@
 /* EstilO Footer */
 footer{
-    background-color: #fafafa;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    div{
-        a{
-            .logos-footer{
-                width:60px;
-                height: 60px;
+    .section-footer{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+        .box-footer-1{ 
+                     a{
+                        display:inline-block;
+                        padding-left: 50px;
+                        padding-right: 40px;
+                        img{
+                        width: 40px;
+                        height: 40px;                
+                        }
+                    }
+                 }
+        .box-footer-2{
+            padding-left: 10px;
+            padding-right: 40px;
+            p{
+                text-align: center;
+                justify-content: center;
+                color: aliceblue;
             }
         }
-        a{
-            .logos-footer{
-                width:60px;
-                height: 60px;
-            }
-        }
-        a{
-            .logos-footer{
-                width:60px;
-                height: 60px;
+        .box-footer-3{
+            padding-right: 30px;
+            p{
+                text-align: center;
+                justify-content: center;
+                color: aliceblue;
+                
             }
         }
     }
+
 }

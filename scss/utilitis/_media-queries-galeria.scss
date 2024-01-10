@@ -1,0 +1,7 @@
+ // Media queries galeria
+ @media (max-width: 768px){
+     section{
+         grid-template-columns: 1fr;
+         row-gap: 30px;
+     }
+ }

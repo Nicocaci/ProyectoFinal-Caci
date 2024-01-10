@@ -17,12 +17,18 @@ body {
   width: 100vw;
 }
 
-.main-contacto div, main div, main section div div .card .titulos {
+.main-contacto div, main div, main .section-cards .card-tres .fixture .titulo-card-tres, main .section-cards .card-dos .fixture .titulo-card-dos, main .section-cards .card-uno .fixture .titulo-card-uno {
   font-family: "Poppins", sans-serif;
   color: #e7c2c2;
   text-align: center;
   padding-top: 10px;
-  text-decoration: underline;
+}
+
+main .section-cards .card-tres, main .section-cards .card-dos, main .section-cards .card-uno {
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ea90ff;
+  overflow: hidden;
+  width: 400px;
 }
 
 /* estilos header */
@@ -80,51 +86,86 @@ header div nav div div ul .list-menu .logo-qac {
 }
 
 /* EstilO Footer */
-footer {
-  background-color: #fafafa;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
+footer .section-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
 }
-footer div a .logos-footer {
-  width: 60px;
-  height: 60px;
+footer .section-footer .box-footer-1 a {
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 40px;
 }
-footer div a .logos-footer {
-  width: 60px;
-  height: 60px;
+footer .section-footer .box-footer-1 a img {
+  width: 40px;
+  height: 40px;
 }
-footer div a .logos-footer {
-  width: 60px;
-  height: 60px;
+footer .section-footer .box-footer-2 {
+  padding-left: 10px;
+  padding-right: 40px;
+}
+footer .section-footer .box-footer-2 p {
+  text-align: center;
+  justify-content: center;
+  color: aliceblue;
+}
+footer .section-footer .box-footer-3 {
+  padding-right: 30px;
+}
+footer .section-footer .box-footer-3 p {
+  text-align: center;
+  justify-content: center;
+  color: aliceblue;
 }
 
 /* estilo main inicio */
-main section div div .card {
-  height: 600px;
-  border: 2px solid #01ebcf;
-  background-color: #292c3e;
-  overflow: hidden;
-  border-radius: 5px;
-  box-shadow: 11px 13px 46px 2px rgba(105, 221, 232, 0.75);
-  -webkit-box-shadow: 11px 13px 46px 2px rgba(105, 221, 232, 0.75);
-  -moz-box-shadow: 11px 13px 46px 2px rgba(105, 221, 232, 0.75);
+main .section-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
 }
-main section div div .card .fixture {
+main .section-cards .card-uno {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main .section-cards .card-uno .fixture {
   width: 100%;
-  height: 300px;
+  border-bottom: 1px solid #ddd;
 }
-main section div div .card .texto-box {
-  font-size: small;
-  font-family: "Open Sans";
-  color: #01ebcf;
-  text-align: center;
+main .section-cards .card-dos {
+  margin-left: 20px;
+  margin-right: 20px;
 }
-
+main .section-cards .card-dos .fixture {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+main .section-cards .card-tres {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+main .section-cards .card-tres .fixture {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
 /* estilo main galeria */
-section div .grilla-fotos {
-  height: 400px;
+main section {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  row-gap: 20px;
+}
+main section .foto-galeria {
+  width: 700px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+main section .foto-galeria img {
+  width: 100%;
+  height: auto;
 }
 
 /* estilo main historia */
@@ -167,4 +208,29 @@ section div iframe {
   text-align: center;
   padding-top: 10px;
   text-decoration: underline;
+}
+
+@media (max-width: 995px) {
+  main .section-cards {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  footer .section-footer {
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .section-footer .box-footer-3 p {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
 }/*# sourceMappingURL=main.css.map */
