@@ -8,12 +8,13 @@
         display: flex;
         flex-flow:column;
         align-items: center;
+        justify-content: center;
         div{
             label{
-                display:block;
                 color: #01ebcf;
                 margin: 10px;
                 text-align: justify;
+                
             }
         }
         .estilo-sexo{

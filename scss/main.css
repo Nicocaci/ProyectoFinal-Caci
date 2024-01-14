@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,16 +18,16 @@ body {
   width: 100vw;
 }
 
-.main-contacto div, main div, main .section-cards .card-tres .fixture .titulo-card-tres, main .section-cards .card-dos .fixture .titulo-card-dos, main .section-cards .card-uno .fixture .titulo-card-uno {
-  font-family: "Poppins", sans-serif;
-  color: #e7c2c2;
+.main-contacto div, main section div, main div, main .section-cards .card-tres .fixture .titulo-card-tres, main .section-cards .card-dos .fixture .titulo-card-dos, main .section-cards .card-uno .fixture .titulo-card-uno {
+  font-family: "EB Garamond", serif;
+  color: #fafafa;
   text-align: center;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 main .section-cards .card-tres, main .section-cards .card-dos, main .section-cards .card-uno {
   border-radius: 8px;
-  box-shadow: 0 0 10px #ea90ff;
+  box-shadow: 0 0 10px #fafafa;
   overflow: hidden;
   width: 400px;
 }
@@ -152,35 +153,39 @@ main .section-cards .card-tres .fixture {
   border-bottom: 1px solid #ddd;
 }
 /* estilo main galeria */
-main section {
+main .section-galeria {
   display: grid;
   grid-template-columns: repeat(2, 3fr);
   row-gap: 20px;
 }
-main section .foto-galeria {
-  width: 700px;
+main .section-galeria .foto-galeria {
+  width: 500px;
   padding: 5px;
-  justify-content: center;
-  align-items: center;
 }
-main section .foto-galeria img {
+main .section-galeria .foto-galeria img {
   width: 100%;
   height: auto;
 }
 
 /* estilo main historia */
-section .foto-historia {
-  text-align: center;
+main .foto-historia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-section .texto-historia {
+main .foto-historia img {
+  width: 600px;
+}
+main .texto-historia {
   color: #01ebcf;
   font-family: "Open Sans", sans-serif;
+  margin: 30px;
 }
-section .texto-historia p {
+main .texto-historia p {
   text-align: center;
   border: 2px solid wheat;
-  height: auto;
-  overflow: hidden;
+  padding: 20px;
+  font-size: medium;
 }
 
 /* estilo main contacto */
@@ -188,9 +193,9 @@ form {
   display: flex;
   flex-flow: column;
   align-items: center;
+  justify-content: center;
 }
 form div label {
-  display: block;
   color: #01ebcf;
   margin: 10px;
   text-align: justify;
@@ -202,7 +207,7 @@ form .estilo-sexo {
 }
 
 /* estilo main ubicacion */
-section div iframe {
+div iframe {
   font-family: "Poppins", sans-serif;
   color: #e7c2c2;
   text-align: center;
@@ -214,7 +219,37 @@ section div iframe {
   main .section-cards {
     flex-direction: column;
     align-items: center;
-    row-gap: 10px;
+    row-gap: 80px;
+  }
+  main .section-cards .card-uno {
+    width: 220px;
+  }
+  main .section-cards .card-uno .titulo-card-uno {
+    font-size: 1rem;
+  }
+  main .section-cards .card-uno .texto-box-uno {
+    font-size: x-small;
+    padding: 10px;
+  }
+  main .section-cards .card-dos {
+    width: 220px;
+  }
+  main .section-cards .card-dos .titulo-card-dos {
+    font-size: 1rem;
+  }
+  main .section-cards .card-dos .texto-box-dos {
+    font-size: x-small;
+    padding: 10px;
+    text-align: justify;
+  }
+  main .section-cards .card-tres {
+    width: 220px;
+  }
+  main .section-cards .card-tres .titulo-card-tres {
+    font-size: 1rem;
+  }
+  main .section-cards .card-tres .texto-box-tres {
+    font-size: x-small;
   }
   footer .section-footer {
     grid-template-columns: 1fr;
@@ -223,14 +258,55 @@ section div iframe {
     justify-content: center;
     align-items: center;
   }
+  footer .section-footer .box-footer-2 {
+    padding: 0;
+  }
+  footer .section-footer .box-footer-2 p {
+    font-size: small;
+  }
+  footer .section-footer .box-footer-3 {
+    padding: 0;
+  }
   footer .section-footer .box-footer-3 p {
-    margin-left: 100px;
-    margin-right: 100px;
+    font-size: small;
+    padding: 10px;
   }
 }
-@media (max-width: 768px) {
-  section {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
+@media (max-width: 525px) {
+  header .main-header a .logo-qac {
+    margin-left: 80px;
+  }
+  header .main-header .titulo-qac {
+    display: none;
+  }
+}
+@media screen and (max-width: 996px) {
+  main .section-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 80px;
+  }
+  main .section-galeria .foto-galeria {
+    width: 300px;
+    align-items: center;
+  }
+}
+@media (max-width: 996px) {
+  main section .foto-historia img {
+    width: 300px;
+  }
+}
+@media (max-width: 550px) {
+  .main-contacto form label {
+    font-size: x-small;
+  }
+  .main-contacto form input {
+    font-size: x-small;
+  }
+}
+@media (max-width: 690px) {
+  main div iframe {
+    width: 200px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -1,7 +1,14 @@
- // Media queries galeria
- @media (max-width: 768px){
-     section{
-         grid-template-columns: 1fr;
-         row-gap: 30px;
-     }
- }
+@media screen and (max-width: 996px){
+    main{
+        .section-galeria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 80px;
+        .foto-galeria{
+            width: 300px;
+            align-items: center;
+        }
+    }
+    }
+}

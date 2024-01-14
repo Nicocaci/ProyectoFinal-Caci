@@ -14,8 +14,10 @@ main{
                 border-bottom: 1px solid #ddd;
                 .titulo-card-uno{
                     @extend %titulos;
+                    
                 }
             }
+
         }
         .card-dos{
             @extend %card;

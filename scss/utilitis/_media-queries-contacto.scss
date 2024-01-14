@@ -1,0 +1,15 @@
+    // Media queries contacto
+
+    @media (max-width:550px){
+        .main-contacto{
+            form{
+                label{
+                    font-size: x-small;
+                }
+                input{
+                    font-size: x-small;
+                }
+
+            }
+        }
+    }

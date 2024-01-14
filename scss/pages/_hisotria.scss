@@ -1,22 +1,31 @@
 /* estilo main historia */
 
 main{
+    section{
     div{
         @extend %titulos;
         }
     }
-    section{
-        .foto-historia{
-            text-align: center;
+    .foto-historia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 600px;
+        }
         }
         .texto-historia{
             color:#01ebcf;
             font-family: 'Open Sans', sans-serif;
+            margin: 30px;
+
                 p{
                     text-align: center;
                     border: 2px solid wheat;
-                    height: auto;
-                    overflow: hidden;
+                    // height: auto;
+                    // overflow: hidden;
+                    padding: 20px;
+                    font-size: medium;
             }
         }
     }

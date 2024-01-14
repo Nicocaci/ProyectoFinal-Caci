@@ -4,18 +4,17 @@ main{
     div{
         @extend %titulos;
         }
-    section{
+    .section-galeria{
         display: grid;
         grid-template-columns: repeat(2,3fr);
         row-gap: 20px;
         .foto-galeria{
-            width: 700px;
+            width: 500px;
             padding: 5px;
-            justify-content: center;
-            align-items: center;
+
             img{
             width: 100%;
-            height: auto    ;
+            height: auto;
             }
         }
     
